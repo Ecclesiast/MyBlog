@@ -6,7 +6,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
@@ -21,7 +21,7 @@
         My Account
       </button>
       <li class="dropdown-menu dropdown-menu-right">
-        <a class="dropdown-item" href="/posts/create">Create New Post</button>
+        <a class="dropdown-item" href="/posts">My posts</button>
         <a class="dropdown-item">Another action</button>
         <a class="dropdown-item">Something else here</button>
         <div class="dropdown-divider"></div>

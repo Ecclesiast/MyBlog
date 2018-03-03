@@ -15,7 +15,12 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        //create a var and get all posts from db
+        $posts = Post::all();
+
+        //return the view with all posts
+
+        return view('posts.index')->with('posts', $posts);
     }
 
     /**
@@ -49,7 +54,7 @@ class PostController extends Controller
 
         $post->save();
 
-        Session::flash('success', 'The blogspot is successfully saved!');
+        Session::flash('success', 'The blogpost is successfully saved!');
         // redirect to another page
         return redirect()->route('posts.show', $post->id);
     }
@@ -62,7 +67,8 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        return view('posts.show');
+        $post = Post::find($id);
+        return view('posts.show')->with('post', $post);
     }
 
     /**
