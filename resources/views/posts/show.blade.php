@@ -38,6 +38,12 @@
                         {!! Form::close() !!}
                     </div>
                 </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12">
+                        {!! Html::linkRoute('posts.index', '<< Go to all posts', [], ['class' => 'btn btn-secondary btn-block']) !!}
+                    </div>
+                </div>
             </div>
         </div>
 
